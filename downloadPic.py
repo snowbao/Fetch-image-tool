@@ -19,9 +19,9 @@ def getImage(source):
     x = 0
     for i in images:
             temp = filepath + '/%s.jpg' % x
-            print u'正在下载第%s张图片' % x
+            print u'downloading pic%s now, please waiting' % x
             urllib.urlretrieve(i,temp)
             x+=1
 
-source = getHtml('http://www.5442.com/tag/rosi.html')
+source = getHtml('http://www.tooopen.com/img/87.aspx')
 print getImage(source)
